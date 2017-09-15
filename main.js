@@ -24,6 +24,7 @@ $('#submit').click(function(){
     var datepicker = $('#datepicker').val("");
     $(".tk").draggable({ cursor: "crosshair", overflow: "none", drag: function(){
         $("#task_form_one").show("slow");
+        $(".task_form").hide("slow");
     }});
         $(".item, #panel_one").droppable({ accept: ".tk", 
                    drop: function(event, ui) {
@@ -47,6 +48,7 @@ $('#submit').click(function(){
 
         $(".item, #panel_one").droppable({ accept: ".tk", drop: function(event, ui) {
                            $("#task_form_one").hide("slow");
+                           $(".task_form").show("slow");
                      var dropped = ui.draggable;
                     var droppedOn = $(this);
                     $(dropped).detach().css({top: 0,left: 0}).appendTo(droppedOn);      
