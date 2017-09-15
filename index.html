@@ -2,21 +2,31 @@
 <html>
     <head>
         <title>TodoList</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
         <div class="container">
-            <div id="div1" class="item one">
-                <div class="header">Pending <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">person_add</i></div>
+            <div class="row">
+                <div class="col-md-4">
+                <div id="div1" class="item one">
+                    <div class="header">Pending <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">person_add</i></div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div id="div2" class="item two">
+                     <div class="header">In Progress <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_chart</i></div>
+                </div>
+                    </div>
+                <div class="col-md-4">
+                <div id="div3" class="item three">
+                    <div class="header">Completed <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_comment</i></div>
+                </div>
             </div>
-            <div id="div2" class="item two">
-                 <div class="header">In Progress <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_chart</i></div>
-            </div>
-            <div id="div3" class="item three">
-                <div class="header">Completed <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_comment</i></div>
-            </div>
+        </div>
         </div>
         <div class="task_form">
                 <div id="flip">
@@ -42,9 +52,10 @@
         </div>
         
         
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
