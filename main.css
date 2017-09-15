@@ -51,6 +51,7 @@ body{
     position: fixed;
     bottom: 0;
     right: 18px;
+    z-index: 100;
 }
 #panel{
     display: none;
