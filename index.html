@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TodoList</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="container">
+            <div id="div1" class="item one">
+                <div class="header">Pending <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">person_add</i></div>
+            </div>
+            <div id="div2" class="item two">
+                 <div class="header">In Progress <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_chart</i></div>
+            </div>
+            <div id="div3" class="item three">
+                <div class="header">Completed <i class="material-icons" style="font-size: 31px !important; margin-left: 10px;">insert_comment</i></div>
+            </div>
+        </div>
+        <div class="task_form">
+                <div id="flip">
+                ADD A TASK <i class="material-icons" style="margin-left: 10px;">queue</i>
+            </div>
+            <div id="panel">
+                <input id="title" type="text" placeholder="Title"><br>
+                <textarea id="description" placeholder="Description"></textarea><br>
+                <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)"><br>
+                <button type="button" id="submit">Add Task</button>
+                <button type="button" id="All_clear">All Clear</button>
+            </div>
+        </div>
+        
+        
+        <div id="task_form_one">
+            <div id="flip_one">
+                DELETE <i class="material-icons" style="margin-left: 10px;">delete</i>
+            </div>
+            <div id="panel_one">
+                
+            </div>
+        </div>
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
